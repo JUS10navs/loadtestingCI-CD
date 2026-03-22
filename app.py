@@ -9,7 +9,7 @@ def fast():
 
 @app.route('/api/slow')
 def slow():
-    time.sleep(1)  # 1 second delay
+    time.sleep(0.3)
     return jsonify({"message": "Slow response"})
 
 if __name__ == "__main__":
